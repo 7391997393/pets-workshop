@@ -1,0 +1,10 @@
+name: AI Code Review
+ 
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+ 
+jobs:
+  ai-review:
+    uses: 7391997393/ai-review-agentt/.github/workflows/reusable-ai-review.yml@main
+    secrets: inherit
